@@ -1,0 +1,22 @@
+Steps to Install AutoGen Studio on a Mac:
+
+1. Download Anaconda from https://www.anaconda.com/download
+2. Go to  Finder —> open Terminal. Type the following 4 commands (one by one) in the Terminal:
+
+conda create -n ag python=3.11
+
+conda activate ag
+
+pip install autogenstudio
+
+autogenstudio ui --port 8081
+
+
+Explanation: First command creates a new conda environment. Second command activates the conda environment. Third command installs autogenstudio. Fourth command runs autogenstudio on port 8081 (Note: you can change the port number eg to 8082 or 8083)
+
+Note: You will get the following message:
+
+Uvicorn running on http://127.0.0.1:8081 
+
+3.Copy that local URL in your browser (or hold Command and click on the link to open it) —> This will open Autogen studio UI:
+
